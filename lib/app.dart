@@ -30,7 +30,9 @@ class _CocoappState extends State<Cocoapp> {
                       borderRadius: BorderRadius.circular(8)
                   )
               )
-          )
+          ),
+        fontFamily: 'Poppins_SemiBold',
+
       ),
       home: Splash_screen(),
     );

@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
 
+import 'forget_password.dart';
+
 class Sign_in_page extends StatefulWidget {
   const Sign_in_page({super.key});
 
@@ -24,7 +26,7 @@ class _Sign_in_pageState extends State<Sign_in_page> {
             child: Column(
               children: [
                 Padding(
-                  padding: const EdgeInsets.all(40.0),
+                  padding: const EdgeInsets.all(30.0),
                   child: SvgPicture.asset(AssetUtils.logoSvg),
                 ),
                 Container(
@@ -42,9 +44,7 @@ class _Sign_in_pageState extends State<Sign_in_page> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(
-                            height: 20,
-                          ),
+
                           Text(
                             'Welcome to coco app',
                             style: TextStyle(
@@ -81,12 +81,14 @@ class _Sign_in_pageState extends State<Sign_in_page> {
                             child: Column(
                               children: [
                                 SizedBox(height: 5,),
-                                Text(
+                                TextButton(onPressed: (){
+                                  Get.to(Forget_password());
+                                }, child:  Text(
                                   'Forget Password?',
                                   style: TextStyle(
                                       fontSize: 15 , color: Colors.black26),
-                                ),
-                                SizedBox(height: 20,),
+                                )),
+                                SizedBox(height: 5,),
                                 Text('or Sign in via',style: TextStyle(fontWeight: FontWeight.bold),),
                                 SizedBox(height: 10,),
                                 Container(
@@ -103,7 +105,7 @@ class _Sign_in_pageState extends State<Sign_in_page> {
                                         mainAxisAlignment: MainAxisAlignment.center,
                                         children: [
                                           Image.asset('asset/image/google.png', width: 30,),
-                                          SizedBox(width: 10,),
+                                          SizedBox(width: 5,),
                                           Text('Google')
                                         ],
                                       ),

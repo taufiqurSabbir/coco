@@ -1,3 +1,4 @@
+import 'package:coco/UI/screens/role_selector.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
@@ -27,11 +28,11 @@ class _otp_verified_screenState extends State<otp_verified_screen> {
                   child: SvgPicture.asset(AssetUtils.logoSvg),
                 ),
                 Container(
-                  width: MediaQuery.of(context).size.width ,
+                  width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius:
-                    BorderRadius.only(topLeft: Radius.circular(85)),
+                        BorderRadius.only(topLeft: Radius.circular(85)),
                   ),
                   child: Expanded(
                     child: Padding(
@@ -40,28 +41,36 @@ class _otp_verified_screenState extends State<otp_verified_screen> {
                         mainAxisAlignment: MainAxisAlignment.center,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          SizedBox(height: 20,),
-                         Padding(
-                           padding: const EdgeInsets.all(28.0),
-                           child: Center(
-                             child: SvgPicture.asset(
-                               AssetUtils.sign
-                             ),
-                           ),
-                         ),
-
-                          SizedBox(height: 30,),
-                          Center(child: Text('Code Varified',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
-                          SizedBox(height: 70,),
-                          SizedBox(width:double.infinity ,child: ElevatedButton(onPressed: (){}, child: Text('Continue'))),
-                          SizedBox(height: 130,),
-
-
-
-
-
-
-
+                          SizedBox(
+                            height: 20,
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.all(28.0),
+                            child: Center(
+                              child: SvgPicture.asset(AssetUtils.sign),
+                            ),
+                          ),
+                          SizedBox(
+                            height: 30,
+                          ),
+                          Center(
+                              child: Text(
+                            'Code Varified',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 25),
+                          )),
+                          SizedBox(
+                            height: 70,
+                          ),
+                          SizedBox(
+                              width: double.infinity,
+                              child: ElevatedButton(
+                                  onPressed: () {
+                                    Get.to(Role_selector());
+                                  }, child: Text('Continue'))),
+                          SizedBox(
+                            height: 130,
+                          ),
                         ],
                       ),
                     ),

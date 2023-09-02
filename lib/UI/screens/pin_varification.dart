@@ -5,6 +5,7 @@ import 'package:get/get_core/src/get_main.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../utils/asset_utils.dart';
+import 'otp_incorrect.dart';
 import 'otp_varified_screen.dart';
 
 class Pin_varification extends StatefulWidget {
@@ -15,6 +16,7 @@ class Pin_varification extends StatefulWidget {
 }
 
 class _Pin_varificationState extends State<Pin_varification> {
+   bool isvarified = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -109,7 +111,8 @@ class _Pin_varificationState extends State<Pin_varification> {
                           SizedBox(height: 20,),
 
                           SizedBox(width: double.infinity,child:  ElevatedButton(onPressed: (){
-                            Get.to(otp_verified_screen());
+
+                            isvarified ? Get.to(const otp_verified_screen()) : Get.to(Otp_incorrect());
                           }, child: Text('Validate')),),
                           SizedBox(height: 280,)
 
