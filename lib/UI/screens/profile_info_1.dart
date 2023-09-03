@@ -1,5 +1,5 @@
 import 'package:coco/UI/utils/asset_utils.dart';
-import 'package:coco/UI/utils/style.dart';
+import 'package:get/get.dart';
 import 'package:flutter/material.dart';
 
 class profile_info_1 extends StatefulWidget {
@@ -22,16 +22,21 @@ class _profile_info_1State extends State<profile_info_1> {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      IconButton(
-                          onPressed: () {},
-                          icon: Icon(Icons.arrow_back_outlined)),
-                      SizedBox(
-                        width: 50,
-                      )
-                    ],
+                  Padding(
+                    padding: const EdgeInsets.only(top: 18.0),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        IconButton(
+                            onPressed: () {
+                                Get.back();
+                            },
+                            icon: Icon(Icons.arrow_back_outlined)),
+                        SizedBox(
+                          width: 50,
+                        )
+                      ],
+                    ),
                   ),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.center,

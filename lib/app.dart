@@ -18,6 +18,7 @@ class _CocoappState extends State<Cocoapp> {
         inputDecorationTheme: const InputDecorationTheme(
           contentPadding: EdgeInsets.symmetric(horizontal: 25, vertical: 16),
           filled: true,
+          hintStyle: TextStyle(fontFamily: 'Poppins-Light'),
           border: OutlineInputBorder(borderSide: BorderSide.none),
         ),
 

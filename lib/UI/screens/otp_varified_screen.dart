@@ -34,45 +34,43 @@ class _otp_verified_screenState extends State<otp_verified_screen> {
                     borderRadius:
                         BorderRadius.only(topLeft: Radius.circular(85)),
                   ),
-                  child: Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.all(30.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          SizedBox(
-                            height: 20,
+                  child: Padding(
+                    padding: const EdgeInsets.all(30.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.all(28.0),
+                          child: Center(
+                            child: SvgPicture.asset(AssetUtils.sign),
                           ),
-                          Padding(
-                            padding: const EdgeInsets.all(28.0),
-                            child: Center(
-                              child: SvgPicture.asset(AssetUtils.sign),
-                            ),
-                          ),
-                          SizedBox(
-                            height: 30,
-                          ),
-                          Center(
-                              child: Text(
-                            'Code Varified',
-                            style: TextStyle(
-                                fontWeight: FontWeight.bold, fontSize: 25),
-                          )),
-                          SizedBox(
-                            height: 70,
-                          ),
-                          SizedBox(
-                              width: double.infinity,
-                              child: ElevatedButton(
-                                  onPressed: () {
-                                    Get.to(Role_selector());
-                                  }, child: Text('Continue'))),
-                          SizedBox(
-                            height: 130,
-                          ),
-                        ],
-                      ),
+                        ),
+                        SizedBox(
+                          height: 30,
+                        ),
+                        Center(
+                            child: Text(
+                          'Code Varified',
+                          style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 25),
+                        )),
+                        SizedBox(
+                          height: 70,
+                        ),
+                        SizedBox(
+                            width: double.infinity,
+                            child: ElevatedButton(
+                                onPressed: () {
+                                  Get.to(Role_selector());
+                                }, child: Text('Continue'))),
+                        SizedBox(
+                          height: 130,
+                        ),
+                      ],
                     ),
                   ),
                 )

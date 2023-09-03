@@ -32,44 +32,42 @@ class _Otp_incorrectState extends State<Otp_incorrect> {
                   borderRadius:
                   BorderRadius.only(topLeft: Radius.circular(85)),
                 ),
-                child: Expanded(
-                  child: Padding(
-                    padding: const EdgeInsets.all(30.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        SizedBox(height: 20,),
-                        Padding(
-                          padding: const EdgeInsets.all(28.0),
-                          child: Center(
-                            child: SvgPicture.asset(
-                                AssetUtils.bug_svg
-                            ),
+                child: Padding(
+                  padding: const EdgeInsets.all(30.0),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(height: 20,),
+                      Padding(
+                        padding: const EdgeInsets.all(28.0),
+                        child: Center(
+                          child: SvgPicture.asset(
+                              AssetUtils.bug_svg
                           ),
                         ),
+                      ),
 
-                        SizedBox(height: 30,),
-                        Center(child: Text('Code Incorrect',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
-                        SizedBox(height: 70,),
-                        SizedBox(width:double.infinity ,child: ElevatedButton(onPressed: (){
-                          Get.to(Pin_varification());
-                        }, child: Text('Resent code'))),
-                        Padding(
-                          padding: const EdgeInsets.all(18.0),
-                          child: Center(child: TextButton(onPressed: (){}, child: const Text('Cancle',style: TextStyle(color: Colors.black12),))),
-                        ),
-                        SizedBox(height: 50,),
-
-
-
+                      SizedBox(height: 30,),
+                      Center(child: Text('Code Incorrect',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25),)),
+                      SizedBox(height: 70,),
+                      SizedBox(width:double.infinity ,child: ElevatedButton(onPressed: (){
+                        Get.to(Pin_varification());
+                      }, child: Text('Resent code'))),
+                      Padding(
+                        padding: const EdgeInsets.all(18.0),
+                        child: Center(child: TextButton(onPressed: (){}, child: const Text('Cancle',style: TextStyle(color: Colors.black12),))),
+                      ),
+                      SizedBox(height: 50,),
 
 
 
 
 
-                      ],
-                    ),
+
+
+
+                    ],
                   ),
                 ),
               )
