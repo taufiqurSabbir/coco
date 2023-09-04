@@ -8,4 +8,11 @@ class AssetUtils{
   static String role_select_img = '$_Imageloc/role_page_img.png';
   static String welcome_image = '$_Imageloc/Group 1294.svg';
   static String user_place_holder = '$_Imageloc/user-placeholder.png';
+  static String nav_home = '$_Imageloc/nav_home.svg';
+  static String nav_bar = '$_Imageloc/bar.svg';
+  static String nav_search = '$_Imageloc/search.svg';
+  static String nav_location = '$_Imageloc/location.svg';
+  static String nav_avatar = '$_Imageloc/nav_image.jpg';
+  static String profile_image = '$_Imageloc/profile_image.png';
+  static String search_check = '$_Imageloc/profile_image.png';
 }

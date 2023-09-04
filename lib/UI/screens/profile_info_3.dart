@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../utils/asset_utils.dart';
+import 'buttom_nav.dart';
 
 class profile_info_3 extends StatefulWidget {
   const profile_info_3({super.key});
@@ -258,7 +259,7 @@ class _profile_info_3State extends State<profile_info_3> {
                                 backgroundColor: Color(0xFF00CC83),
                               ),
                               onPressed: () {
-                                Get.to(() => profile_info_3());
+                                Get.to(() => buttom_nav());
                               },
                               child: Text(
                                 'Continue',
