@@ -29,7 +29,9 @@ class Role_selector extends StatelessWidget {
             Row(
               children: [
                 IconButton(
-                    onPressed: () {},
+                    onPressed: () {
+                      Get.back();
+                    },
                     icon: Icon(
                       Icons.arrow_back,
                       color: Colors.white,

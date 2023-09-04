@@ -1,16 +1,17 @@
-import 'package:coco/UI/screens/profile_info_2.dart';
-import 'package:coco/UI/utils/asset_utils.dart';
-import 'package:get/get.dart';
+import 'package:coco/UI/screens/profile_info_3.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
-class profile_info_1 extends StatefulWidget {
-  const profile_info_1({super.key});
+import '../utils/asset_utils.dart';
+
+class profile_info_2 extends StatefulWidget {
+  const profile_info_2({super.key});
 
   @override
-  State<profile_info_1> createState() => _profile_info_1State();
+  State<profile_info_2> createState() => _profile_info_2State();
 }
 
-class _profile_info_1State extends State<profile_info_1> {
+class _profile_info_2State extends State<profile_info_2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -130,7 +131,7 @@ class _profile_info_1State extends State<profile_info_1> {
                           mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Text(
-                              'Step 1 of 3',
+                              'Step 2 of 3',
                               style: TextStyle(
                                   fontSize: 20,
                                   color: Colors.black,
@@ -141,7 +142,7 @@ class _profile_info_1State extends State<profile_info_1> {
                         SizedBox(
                           height: 5,
                         ),
-                        Text('Business info',
+                        Text('Contact info',
                             style: TextStyle(
                                 fontSize: 23,
                                 color: Color(0xFF00CC83),
@@ -158,7 +159,7 @@ class _profile_info_1State extends State<profile_info_1> {
                                 Row(
                                   children: [
                                     Text(
-                                      'Display name',
+                                      'Phone number',
                                     ),
                                     SizedBox(
                                       width: 2,
@@ -174,7 +175,95 @@ class _profile_info_1State extends State<profile_info_1> {
                                   ],
                                 ),
                                 Text(
-                                  'Name freelancers will see on your profile',
+                                  'Freelancers will call you on this number',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontFamily: 'Poppins-Light',
+                                      color: Color(0xFFA1A1A1)),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 18,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              fillColor: Color(0xFFF8F8F8),
+                              hintText: ('enter phone number'),
+                              hintStyle: TextStyle(
+                                  fontFamily: 'Poppins-Light', fontSize: 11)),
+                        ),
+                        SizedBox(
+                          height: 18,
+                        ),
+                        Row(
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      'Email',
+                                    ),
+                                    SizedBox(
+                                      width: 2,
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.only(bottom: 8.0),
+                                      child: CircleAvatar(
+                                        radius: 3,
+                                        backgroundColor: Color(0xFF00CC83),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                Text(
+                                  'Freelancer will contact you on this mail',
+                                  style: TextStyle(
+                                      fontSize: 12,
+                                      fontFamily: 'Poppins-Light',
+                                      color: Color(0xFFA1A1A1)),
+                                ),
+                              ],
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: 18,
+                        ),
+                        TextFormField(
+                          decoration: InputDecoration(
+                              fillColor: Color(0xFFF8F8F8),
+                              hintText: ('Enter email address'),
+                              hintStyle: TextStyle(
+                                  fontFamily: 'Poppins-Light', fontSize: 11)),
+                        ),
+                        SizedBox(
+                          height: 18,
+                        ),
+                        Row(
+                          children: [
+                            Column(
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Row(
+                                  children: [
+                                    Text(
+                                      'Website',
+                                    ),
+                                    SizedBox(
+                                      width: 2,
+                                    ),
+                                  ],
+                                ),
+                                Text(
+                                  'Freelancer will view your website',
                                   style: TextStyle(
                                       fontSize: 12,
                                       fontFamily: 'Poppins-Light',
@@ -197,170 +286,6 @@ class _profile_info_1State extends State<profile_info_1> {
                         SizedBox(
                           height: 18,
                         ),
-                        Row(
-                          children: [
-                            Text(
-                              'Description',
-                            ),
-                            SizedBox(
-                              width: 3,
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 8.0),
-                                  child: CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Color(0xFF00CC83),
-                                  ),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          height: 7,
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            TextFormField(
-                              decoration: InputDecoration(
-                                  fillColor: Color(0xFFF8F8F8),
-                                  hintText:
-                                      ('Share a bit about your work experience, your projects...'),
-                                  contentPadding: const EdgeInsets.symmetric(
-                                      vertical: 50.0, horizontal: 10.0),
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Poppins-Light',
-                                      fontSize: 11),
-                                  hintMaxLines: 2),
-                            ),
-                            Text(
-                              'min:150',
-                              style: TextStyle(color: Color(0xFF707070)),
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        SizedBox(
-                          height: 7,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              'Country',
-                            ),
-                            SizedBox(
-                              width: 3,
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 8.0),
-                                  child: CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Color(0xFF00CC83),
-                                  ),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Column(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            TextFormField(
-                              decoration: InputDecoration(
-                                  fillColor: Color(0xFFF8F8F8),
-                                  hintText: ('Choose a country'),
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Poppins-Light',
-                                      fontSize: 11),
-                                  hintMaxLines: 2),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            TextFormField(
-                              decoration: InputDecoration(
-                                  fillColor: Color(0xFFF8F8F8),
-                                  hintText: ('Zip code'),
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Poppins-Light',
-                                      fontSize: 11),
-                                  hintMaxLines: 2),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            TextFormField(
-                              decoration: InputDecoration(
-                                  fillColor: Color(0xFFF8F8F8),
-                                  hintText: ('Choose a city'),
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Poppins-Light',
-                                      fontSize: 11),
-                                  hintMaxLines: 2),
-                            ),
-                            SizedBox(
-                              height: 7,
-                            ),
-                            TextFormField(
-                              decoration: InputDecoration(
-                                  fillColor: Color(0xFFF8F8F8),
-                                  hintText: ('Address'),
-                                  hintStyle: TextStyle(
-                                      fontFamily: 'Poppins-Light',
-                                      fontSize: 11),
-                                  hintMaxLines: 2),
-                            ),
-                          ],
-                        ),
-                        SizedBox(
-                          height: 20,
-                        ),
-                        Row(
-                          children: [
-                            Text(
-                              'Opening hours',
-                            ),
-                            SizedBox(
-                              width: 3,
-                            ),
-                            Row(
-                              children: [
-                                Padding(
-                                  padding: const EdgeInsets.only(bottom: 8.0),
-                                  child: CircleAvatar(
-                                    radius: 3,
-                                    backgroundColor: Color(0xFF00CC83),
-                                  ),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                        SizedBox(
-                          width: double.infinity,
-                          child: OutlinedButton(
-                              style: OutlinedButton.styleFrom(
-                                  side: BorderSide(
-                                color: Color(0xFF00CC83),
-                              )),
-                              onPressed: () {},
-                              child: Text(
-                                '+ Create opening hours',
-                                style: TextStyle(color: Color(0xFF00CC83)),
-                              )),
-                        ),
                         SizedBox(
                           height: 10,
                         ),
@@ -371,7 +296,7 @@ class _profile_info_1State extends State<profile_info_1> {
                                 backgroundColor: Color(0xFF00CC83),
                               ),
                               onPressed: () {
-                                Get.to(() => profile_info_2());
+                                Get.to(() => profile_info_3());
                               },
                               child: Text(
                                 'Continue',

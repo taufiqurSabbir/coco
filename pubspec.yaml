@@ -85,9 +85,10 @@ flutter:
      - family: Poppins-Light
        fonts:
          - asset: asset/fonts/Poppins-Light.ttf
-     - family: MaterialIcons
-#       fonts:
-#         -asset: asset/fonts/MaterialIcons-Regular.otf
+
+     - family: Poppins-Bold
+       fonts:
+         - asset: asset/fonts/Poppins-Bold.ttf
 
   #
   # For details regarding fonts from package dependencies,
