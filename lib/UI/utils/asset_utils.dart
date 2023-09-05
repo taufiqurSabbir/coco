@@ -15,4 +15,12 @@ class AssetUtils{
   static String nav_avatar = '$_Imageloc/nav_image.jpg';
   static String profile_image = '$_Imageloc/profile_image.png';
   static String search_check = '$_Imageloc/profile_image.png';
+  static String post_1 = '$_Imageloc/post_1.png';
+  static String post_2 = '$_Imageloc/post_2.png';
+  static String post_3 = '$_Imageloc/post_3.png';
+  static String profile_avatar = '$_Imageloc/profile_page_img.png';
+  static String profile_post_1 = '$_Imageloc/profile_post_1.png';
+  static String profile_post_2 = '$_Imageloc/profile_post_2.png';
+  static String profile_post_3 = '$_Imageloc/profile_post_3.png';
+  static String profile_post_4 = '$_Imageloc/profile_post_4.png';
 }

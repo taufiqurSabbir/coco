@@ -78,7 +78,7 @@ class Role_selector extends StatelessWidget {
                             style: ElevatedButton.styleFrom(
                                 backgroundColor: Colors.green.shade500),
                             onPressed: () {
-                              // Get.to(profile_info_1());
+                              Get.to(profile_info_1());
                             },
                             child: Text(
                               'Hire a freelancer',
@@ -94,7 +94,7 @@ class Role_selector extends StatelessWidget {
                               backgroundColor: Colors.white,
                             ),
                             onPressed: () {
-                              // Get.to(profile_info_1());
+                              Get.to(profile_info_1());
                             },
                             child: Text(
                               'Become Freelancer',

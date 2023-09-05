@@ -1,4 +1,5 @@
 import 'package:coco/UI/screens/bar.dart';
+import 'package:coco/UI/screens/profile_page.dart';
 import 'package:coco/UI/screens/search.dart';
 import 'package:coco/UI/utils/asset_utils.dart';
 import 'package:flutter/material.dart';
@@ -22,6 +23,7 @@ class _buttom_navState extends State<buttom_nav> {
     search(),
     Home(),
     location(),
+    Profile_page(),
   ];
 
   bool hometap = false;
@@ -209,7 +211,7 @@ class _buttom_navState extends State<buttom_nav> {
             ),
             InkWell(
               onTap: () {
-                istap = true;
+                page_index = 4;
                 if (mounted) {
                   setState(() {});
                 }
